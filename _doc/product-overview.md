@@ -1,0 +1,1 @@
+I want to create an app to give tarot advice for business owners.
