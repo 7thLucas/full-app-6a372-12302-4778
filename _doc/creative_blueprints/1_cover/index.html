@@ -1,0 +1,54 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 52%; }
+  .mode-landscape .sl-right { width: 48%; flex-shrink: 0; }
+  .mode-portrait .sl-left { width: 100%; flex: 1; }
+  .mode-portrait .sl-right { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left content column -->
+    <div class="sl-left flex flex-col justify-between p-12" style="background: linear-gradient(158deg, #0a0220 0%, #2a0f5e 100%);">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-3">
+        <span style="display:inline-block;width:28px;height:2px;background:#c9a227;border-radius:1px;"></span>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#c9a227;">Business Intuition Platform</span>
+      </div>
+
+      <!-- Headline + tagline -->
+      <div>
+        <h1 class="font-black leading-none mb-5" style="font-size:2.75rem;color:#f3eeff;letter-spacing:-0.02em;">
+          Read the Cards.<br/>Lead Your Business.
+        </h1>
+        <p class="text-sm leading-relaxed mb-8" style="color:#b0a0d4;max-width:360px;">
+          Tarot-powered guidance designed for founders and business owners making real decisions — with clarity, not guesswork.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:rgba(201,162,39,0.15);color:#c9a227;border:1px solid rgba(201,162,39,0.35);">AI-Powered Readings</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:rgba(201,162,39,0.15);color:#c9a227;border:1px solid rgba(201,162,39,0.35);">Business Spreads</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:rgba(201,162,39,0.15);color:#c9a227;border:1px solid rgba(201,162,39,0.35);">Decision Clarity</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right visual -->
+    <div class="sl-right overflow-hidden" style="position:relative;">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=premium%20tarot%20cards%20spread%20on%20dark%20velvet%2C%20warm%20golden%20candlelight%2C%20deep%20violet%20and%20indigo%20atmosphere%2C%20luxury%20editorial%20photography%2C%20high%20contrast%20dramatic%20lighting"
+        alt="Tarot cards on velvet"
+        style="width:100%;height:100%;object-fit:cover;"
+      />
+      <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(10,2,32,0.45), transparent);"></div>
+    </div>
+
+  </div>
+</section>
