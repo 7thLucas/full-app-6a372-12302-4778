@@ -1,0 +1,102 @@
+<style>
+  .mode-landscape .sl-ns-layout { flex-direction: row; gap: 1.5rem; }
+  .mode-portrait .sl-ns-layout { flex-direction: column; gap: 1.25rem; }
+  .mode-landscape .sl-ns-left { width: 44%; flex-shrink: 0; }
+  .mode-landscape .sl-ns-right { flex: 1; }
+  .mode-portrait .sl-ns-left { width: 100%; }
+  .mode-portrait .sl-ns-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <span style="display:inline-block;width:24px;height:2px;background:#c9a227;"></span>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#c9a227;">North Star Metric</span>
+      </div>
+      <h2 class="font-bold" style="font-size:1.6rem;color:#1e1b4b;">Weekly Verified Operations</h2>
+      <p class="text-sm mt-1" style="color:#6d6a8a;">
+        The number this app lives by: <strong style="color:#1e1b4b;">Tarot Readings Completed</strong> — user stated a business question, drew cards, and reviewed the full AI interpretation.
+      </p>
+    </div>
+
+    <div class="sl-ns-layout flex flex-1 min-h-0">
+
+      <!-- Left: WVO formula -->
+      <div class="sl-ns-left flex flex-col gap-3">
+
+        <div class="rounded-xl p-5 flex-1" style="background:#0a0220;">
+          <p class="text-xs font-bold tracking-widest uppercase mb-4" style="color:#c9a227;">WVO Formula</p>
+          <div class="flex flex-col gap-0">
+            <div class="flex justify-between items-center py-2.5" style="border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span class="text-xs" style="color:#b0a0d4;">Active subscribers / week</span>
+              <span class="text-sm font-semibold px-2 py-0.5 rounded" style="background:rgba(201,162,39,0.18);color:#f3e8a0;">
+                30 <span class="text-xs font-normal opacity-60">assumption</span>
+              </span>
+            </div>
+            <div class="flex justify-between items-center py-2.5" style="border-bottom:1px solid rgba(255,255,255,0.07);">
+              <span class="text-xs" style="color:#b0a0d4;">Readings per subscriber / week</span>
+              <span class="text-sm font-semibold px-2 py-0.5 rounded" style="background:rgba(201,162,39,0.18);color:#f3e8a0;">
+                2× <span class="text-xs font-normal opacity-60">assumption</span>
+              </span>
+            </div>
+            <div class="flex justify-between items-center pt-3">
+              <span class="text-sm font-bold" style="color:#f3eeff;">Weekly Readings</span>
+              <span class="font-black" style="font-size:1.6rem;color:#c9a227;">60</span>
+            </div>
+          </div>
+          <p class="text-xs mt-3" style="color:#7a6e9a;font-style:italic;">
+            30 subscribers × 2 readings = <strong style="color:#f3e8a0;">60 readings / week</strong>
+          </p>
+        </div>
+
+        <div class="rounded-xl p-4 text-xs" style="background:#faf9ff;border:1px solid #e5e0ff;">
+          <span class="font-semibold" style="color:#7c3aed;">Assumption — adjust this:</span>
+          <span style="color:#4c4570;"> Replace subscriber count and usage frequency with your measured platform data as you grow.</span>
+        </div>
+
+      </div>
+
+      <!-- Right: value & impact -->
+      <div class="sl-ns-right flex flex-col gap-3">
+
+        <div class="rounded-xl p-5" style="background:#f5f3ff;">
+          <p class="text-xs font-bold tracking-widest uppercase mb-3" style="color:#7c3aed;">Value Per Operation</p>
+          <p class="text-xs leading-relaxed mb-3" style="color:#4c4570;">
+            Each completed reading replaces unstructured deliberation time for the business owner — time that has a real dollar value.
+          </p>
+          <div class="flex flex-col gap-2 text-xs">
+            <div class="flex justify-between">
+              <span style="color:#4c4570;">Time saved per reading</span>
+              <span class="font-semibold" style="color:#1e1b4b;">45 min <span class="font-normal" style="color:#9ca3af;">(assumption)</span></span>
+            </div>
+            <div class="flex justify-between">
+              <span style="color:#4c4570;">Owner's hourly value</span>
+              <span class="font-semibold" style="color:#1e1b4b;">$80 / hr <span class="font-normal" style="color:#9ca3af;">(assumption)</span></span>
+            </div>
+            <div class="flex justify-between pt-1" style="border-top:1px solid #e5e0ff;">
+              <span style="color:#4c4570;">Value per reading</span>
+              <span class="font-bold" style="color:#7c3aed;">$60</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl p-6 flex-1" style="background:linear-gradient(135deg,#0a0220,#3b0f7a);">
+          <p class="text-xs font-bold tracking-widest uppercase mb-3" style="color:#c9a227;">Projected Total Value</p>
+          <p class="text-xs mb-1" style="color:#a899cc;">60 readings / wk × $60 per reading</p>
+          <p class="font-black leading-none mb-1" style="font-size:2.1rem;color:#f3eeff;">
+            $3,600 <span class="text-base font-semibold" style="color:#c4b5e8;">/ week</span>
+          </p>
+          <p class="font-bold mb-5" style="font-size:1.1rem;color:#c9a227;">$187,200 / year</p>
+          <p class="text-xs" style="color:#7a6e9a;font-style:italic;">
+            Projected impact — based on your inputs. Swap assumptions for measured values as the platform grows.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
